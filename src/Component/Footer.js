@@ -29,20 +29,20 @@ export default function Footer() {
         <div className='d-flex flex-md-row flex-column justify-content-center mt-md-0 mt-5 md-ml-0 ml-3'>
         <div >
           <ul className="p-2 btn btn-dark btn-flat d-flex align-items-center mr-5 ml-5" style={{height:"30px"}}>
-          <i class="fa fa-phone"></i>
+          <i className="fa fa-phone"></i>
           <p className="d-flex align-items-center mt-3 ml-1" style={{fontWeight:"600"}}>Contact us</p>
           </ul>
         </div>
         <div className=''>
         
           <ul className="p-2 btn btn-dark btn-flat d-flex align-items-center mr-5 ml-5" style={{height:"30px"}}>
-          <i class="fa fa-address-card"></i>
+          <i className="fa fa-address-card"></i>
           <p className="d-flex align-items-center mt-3 ml-1" style={{fontWeight:"600"}}>About us</p>
           </ul>
         </div>
         <div className=''>
           <ul className="p-2 btn btn-dark btn-flat d-flex align-items-center mr-5 ml-5" style={{height:"30px"}}>
-          <i class="fa fa-phone"></i>
+          <i className="fa fa-phone"></i>
           <p className="d-flex align-items-center mt-3 ml-1" style={{fontWeight:"600"}}>Support</p>
           </ul>
         </div>
