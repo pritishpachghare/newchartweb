@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Component/Navbar';
+import NewGraphsAndChart from './Component/NewGraphsAndChart';
+import { Route, Routes } from 'react-router-dom';
+import Footer from './Component/Footer'
+import AllPieChart from './Component/AllPieChart';
+import AllAreaBar from './Component/AllAreaBar';
+import AllBarGraph from './Component/AllBarGraph';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Navbar/>
+     <Routes>
+        <Route exact path='/' element={<NewGraphsAndChart />} />
+        <Route exact path='/graphs' element={<AllPieChart />} />
+        <Route exact path='/contact' element={<AllAreaBar/>} />
+        <Route exact path='/bargraph' element={<AllBarGraph/>} />
+      </Routes>
+      <Footer/>
     </div>
   );
 }
